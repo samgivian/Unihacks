@@ -1,0 +1,353 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+h1 {
+  padding-top: -200px;
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #2c3e50;
+}
+
+.letterDrop {
+  top: 1em;
+  display: inline-block;
+  letter-spacing: 0.3em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+  10% {
+    opacity: 0.5;
+  }
+
+  20% {
+    opacity: 0.8;
+    top: 3.75em;
+    transform: rotateX(-360deg);
+  }
+
+  100% {
+    opacity: 1;
+    top: 4.50em;
+    transform: rotateX(360deg);
+  }
+}
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("7.jpg");
+  height: 100%;
+  min-height: 700px;
+  color: rgba(69, 76, 86, .3);
+  box-shadow: inset 0 0 0 2000px rgba(42, 45, 51, .5);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+.b2 {
+  font-weight: normal;
+  font-size: 18px;
+  display: inline-block;
+  padding: 11px 140px;
+  color: white;
+  border: 1px solid white;
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.b4:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(22, 24, 92);
+  border-radius: 5px;
+  border: 1px solid rgb(22, 24, 92);
+}
+
+.b3 {
+  left: 200px;
+}
+
+.b1 {
+  font-weight: normal;
+  font-size: 18px;
+  display: inline-block;
+  padding: 11px 140px;
+  color: white;
+  border: 1px solid white;
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.faq-section {
+  background: #fdfdfd;
+  min-height: 100vh;
+  padding: 10vh 0 0;
+}
+
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #E91E63;
+  bottom: -25px;
+  margin-left: -30px;
+}
+
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+  width: 400px;
+  max-width: 90%;
+  display: inline-table;
+
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: rgba(233, 30, 99, 0.1);
+  padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .row.grid .cell {
+  
+    margin-left: 0;
+  }
+
+/*schedule*/
+
+
+  
+  h2 {
+    position: relative;
+   
+  }
+  h2:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #009688;
+    height: 0.7em;
+    flex-grow: 1;
+    margin-left: 8px;
+  }
+  @media all and (min-width: 400px) {
+    h2:after {
+      margin-left: 16px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #009688;
+  }
+  a:hover {
+    border-bottom-width: 2px;
+  }
+  
+  header, .bar > div, main > div, footer {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  @media all and (min-width: 400px) {
+    header, .bar > div, main > div, footer {
+      margin-top: 16px;
+    }
+  }
+  @media all and (min-width: 400px) {
+    header, .bar > div, main > div, footer {
+      margin-bottom: 16px;
+    }
+  }
+  @media all and (min-width: 400px) {
+    header, .bar > div, main > div, footer {
+      padding-left: 16px;
+    }
+  }
+  @media all and (min-width: 400px) {
+    header, .bar > div, main > div, footer {
+      padding-right: 16px;
+    }
+  }
+  @media (min-width: 1032px) {
+    header, .bar > div, main > div, footer {
+      padding-left: 108px;
+    }
+  }
+  
+  main > div, footer {
+    margin-top: 16px;
+  }
+  @media all and (min-width: 400px) {
+    main > div, footer {
+      margin-top: 32px;
+    }
+  }
+  
+  .pullaway {
+    padding-bottom: 4px;
+  }
+  @media all and (min-width: 400px) {
+    .pullaway {
+      padding-bottom: 8px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .pullaway {
+      margin-top: 25px;
+    }
+  }
+  .pullaway > i {
+    font-style: normal;
+    display:block;
+    min-width: 100px;
+    ,ar
+ 
+  }
+  .pullaway > i, .pullaway > span {
+    opacity: 0.7;
+  }
+  .pullaway p {
+    margin: 0;
+  }
+  @media (min-width: 1032px) {
+    .pullaway {
+      position: relative;
+      margin-top: 0;
+    }
+    .pullaway > i {
+      display: block;
+      position: absolute;
+      right: 100%;
+      text-align: right;
+      padding-right: 8px;
+    }
+  }
+  @media all and (min-width: 1032px) and (min-width: 400px) {
+    .pullaway > i {
+      padding-right: 16px;
+    }
+    
+  }
+  
+  
